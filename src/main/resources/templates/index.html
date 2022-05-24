@@ -2,14 +2,14 @@
 
 <html lang="es" xmlns:th="http://www.thymeleaf.org">
     <head>
-        <title>Editorial</title>
+        <title>EDITORIALES</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link th:rel="stylesheet" th:href="@{/webjars/bootstrap/4.6.1/css/bootstrap.min.css} "/>
         <link th:rel="stylesheet" th:href="@{/webjars/font-awesome/6.1.0/css/all.css} "/>
         <style>
-            .blue{
-                color: blue;
+            .orange{
+                color: orange;
             }
             .yellow{
                 color: ffcc05;
@@ -18,16 +18,16 @@
     </head>
     <body>
         <div class="container">
-            <h3>Lista de EDITORIALES</h3>
+            <h3>Lista de Editoriaies</h3>
             <hr>
-            <button class="btn btn-primary" style="margin-bottom: 20px; " data-toggle="modal" data-target="#modalGuardar" data-whatever="@mdo">Add</button>
+            <button class="btn btn-primary" style="margin-bottom: 20px; " data-toggle="modal" data-target="#modalGuardar" data-whatever="@mdo">Añadir</button>
             <div class="row">
                 <div class="col">
                     <table class="table" id="tablita">
                         <thead>
                             <tr>
                                 <th scope="col">#</th>
-                                <th scope="col">ID</th>
+                                <th scope="col">ID EDITORIAL</th>
                                 <th scope="col">NOMBRE</th>
                                 <th scope="col">PAIS</th>
                                 <th scope="col" colspan="2">ACCION</th>
@@ -44,7 +44,7 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Nueva Editorial</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Añadir Editorial</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -52,9 +52,9 @@
                     <div class="modal-body">
                         <form>
                             <div class="form-group">
-                                <label for="recipient-name" class="col-form-label">nombre:</label>
+                                <label for="recipient-name" class="col-form-label">Nombre:</label>
                                 <input type="text" class="form-control" id="nombre" placeholder="nombre">
-                                <label for="recipient-name" class="col-form-label">pais:</label>
+                                <label for="recipient-name" class="col-form-label">Pais:</label>
                                 <input type="text" class="form-control" id="pais" placeholder="pais">
                             </div>
 
@@ -62,7 +62,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                        <button type="button" class="btn btn-primary" id="guardar">Registrar Editorial</button>
+                        <button type="button" class="btn btn-primary" id="guardar">Registro Editorial</button>
                     </div>
                 </div>
             </div>
@@ -92,7 +92,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                        <button type="button" class="btn btn-primary" id="modificar">Modificar Escuela</button>
+                        <button type="button" class="btn btn-primary" id="modificar">Modificar Editorial</button>
                     </div>
                 </div>
             </div>

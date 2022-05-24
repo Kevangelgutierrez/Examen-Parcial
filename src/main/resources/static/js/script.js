@@ -12,7 +12,7 @@ function listar() {
                 $("#tablita").append(
                         "<tr><td>" + (i + 1) + "</td><td>" + x[i].ideditorial + "</td><td>" + x[i].nombre
                         + "</td><td>" + x[i].pais + "</td><td><a href='#' onclick='editar("
-                        + x[i].ideditorial + ")'><i class='fa-solid fa-pen-to-square yelow'></i></a></td><td><a href='#' onclick='eliminar(" + x[i].idpost + ")'><i class='fa-solid fa-trash-can red'></i></a></td></tr>");
+                        + x[i].ideditorial + ")'><i class='fa-solid fa-pen-to-square yelow'></i></a></td><td><a href='#' onclick='eliminar(" + x[i].ideditorial + ")'><i class='fa-solid fa-trash-can red'></i></a></td></tr>");
             }
         }
     });
